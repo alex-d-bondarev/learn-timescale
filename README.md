@@ -58,8 +58,8 @@ Steps to reproduce
     curl -XPOST http://localhost:8086/query --data-urlencode "q=CREATE DATABASE mydb"
         
     # Check that write functionality is working
-    curl -i -XPOST 'http://localhost:8086/write?db=mydb' \
-            --data 'kinda,tag=test,thread=1 randomValue=6 946684800'
+    curl -i -XPOST 'http://localhost:8086/write?db=mydb&precision=ms' \
+                --data 'kinda,tag=test,thread=1 randomValue=6 1537701253843'
         
     # Check write command results
     curl -G 'http://localhost:8086/query?db=mydb' --data-urlencode 'q=SELECT * FROM "kinda"'

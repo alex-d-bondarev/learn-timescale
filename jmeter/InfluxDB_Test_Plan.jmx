@@ -31,7 +31,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">kinda,tag=test,thread=${__threadNum} randomValue=${__Random(0,1000)}</stringProp>
+                <stringProp name="Argument.value">kinda,tag=test,thread=${__threadNum} randomValue=${__Random(0,1000)} ${__time}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -40,7 +40,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">http://localhost:8086/write?db=mydb</stringProp>
+          <stringProp name="HTTPSampler.path">http://localhost:8086/write?db=mydb&amp;precision=ms</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
