@@ -133,6 +133,9 @@
         </objProp>
         <stringProp name="filename"></stringProp>
         <stringProp name="RespTimeGraph.interval">1000</stringProp>
+        <intProp name="RespTimeGraph.linestrockwidth">2</intProp>
+        <intProp name="RespTimeGraph.lineshapepoint">4</intProp>
+        <stringProp name="RespTimeGraph.yaxisscalemaxvalue">20</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
